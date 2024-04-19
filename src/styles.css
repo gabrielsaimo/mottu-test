@@ -142,11 +142,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .card {
-    width: calc(100% / 1 - 224px) !important;
+    width: calc(100% / 1 - 175px);
   }
 
   .card2 {
-    width: calc(100% / 1 - 224px);
+    width: calc(100% / 1 - 175px);
   }
 }
 
