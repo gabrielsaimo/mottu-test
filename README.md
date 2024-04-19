@@ -5,6 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <p align="center"><img src="https://mottu.com.br/wp-content/uploads/2022/02/Mottu-grupo-verde-horizontal.png" width="150" /></p>
 <h1 align="center">Mottu Front-end</h1>
 
+## Deploy
+
+The application is deployed on [Vercel](https://vercel.com/).
+link: [https://mottu-test.vercel.app/](https://mottu-test.vercel.app/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
