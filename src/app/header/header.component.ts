@@ -45,6 +45,9 @@ export class HeaderComponent implements OnInit {
       } else {
         this.page = '/buscar';
       }
+      if (this.page === '/') {
+        this.page = '/buscar';
+      }
     }
   }
 
