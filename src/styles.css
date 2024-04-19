@@ -194,3 +194,7 @@ span {
 input {
   cursor: url("assets/rick_cursor-3.png"), auto;
 }
+
+.mdc-text-field--outlined {
+  --mdc-outlined-text-field-container-shape: 20px !important;
+}
