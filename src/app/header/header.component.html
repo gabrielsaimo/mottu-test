@@ -1,0 +1,42 @@
+<mat-toolbar class="navbar">
+  <img ngSrc="/assets/logo.png" alt="Logo" width="144" height="64" priority />
+
+  <span class="example-spacer"></span>
+
+  <button
+    mat-icon-button
+    [class]="
+      page == '/buscar' ? 'example-icon homeActive' : 'example-icon home'
+    "
+    aria-label="Example icon-button with share icon"
+    routerLink="/buscar"
+    routerLinkActive="active"
+    (click)="setPage('/buscar')"
+  >
+    <div class="home_icon">
+      <mat-icon class="icon">home</mat-icon>
+      Início
+    </div>
+  </button>
+  <button
+    mat-icon-button
+    [class]="
+      page == '/favoritos'
+        ? 'example-icon favorite-icon favoritosActive'
+        : 'example-icon favorite-icon favoritos'
+    "
+    aria-label="Example icon-button with heart icon"
+    routerLink="/favoritos"
+    routerLinkActive="active"
+    (click)="setPage('/favoritos')"
+  >
+    <div class="favoritos_icon">
+      <mat-icon class="icon">favorite</mat-icon>
+      Favoritos
+      <div class="favoritos_count">
+        <b class="b_icon">{{ favoritos.length }}</b>
+      </div>
+    </div>
+  </button>
+</mat-toolbar>
+<router-outlet />

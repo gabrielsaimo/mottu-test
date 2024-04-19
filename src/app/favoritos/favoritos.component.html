@@ -1,0 +1,59 @@
+<div class="fundo">
+  <div class="content">
+    <div class="sub_content">
+      <p class="fontCreepster">Favoritos</p>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="content">
+    @if (favoritos.length > 0) {
+    <div class="sub_content" style="display: ruby">
+      <div
+        [class]="favoritos.length == 2 ? 'card2' : 'card'"
+        style="margin: 5px"
+        *ngFor="let personagem of favoritos; let i = index"
+      >
+        <div style="width: 244px; height: 298px">
+          <div class="card-image">
+            <img
+              src="{{ personagem.image }}"
+              width="224"
+              alt="{{ personagem.name }}"
+              style="border-radius: 10px 10px 0 0"
+            />
+
+            <img
+              src="assets/like.png"
+              width="48px"
+              alt="heart"
+              [class]="'heart1'"
+              (click)="removerDosFavoritos(personagem)"
+            />
+          </div>
+          <div class="card-content">
+            <p class="fontCreepster-white" style="font-size: 24px">
+              {{ personagem.name | slice : 0 : 15 }}
+            </p>
+            <p class="fontPoppins-Regular">
+              {{ personagem.species }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    }@else if (favoritos.length === 0) {
+    <div class="blackCard2">
+      <div>
+        <p class="fontPoppins-Bold">Parece que você ainda não tem favoritos</p>
+        <p class="fontPoppins-Regular" style="font-size: 18px">
+          Volte à página inicial e escolha os melhores para você.
+        </p>
+        <button class="button fontPoppins-Bold2" (click)="voltar()">
+          Voltar ao Início
+        </button>
+      </div>
+    </div>
+    }
+  </div>
+</div>
