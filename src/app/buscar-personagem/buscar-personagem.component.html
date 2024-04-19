@@ -35,7 +35,7 @@
   <div class="content">
     <div class="sub_content" style="display: ruby">
       <div
-        class="card"
+        [class]="results.results.length == 2 ? 'card2' : 'card'"
         style="margin: 5px"
         *ngFor="let result of results.results; let i = index"
       >
