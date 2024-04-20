@@ -15,3 +15,11 @@
   width: 0;
   height: 0;
 }
+
+.div_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding-bottom: 10px;
+}

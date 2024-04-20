@@ -188,9 +188,10 @@ body {
 }
 
 span {
-  cursor: url("assets/rick_cursor-2.png"), auto;
+  cursor: url("assets/rick_cursor-2.png"), auto !important;
 }
 
+.mat-mdc-text-field-wrapper.mdc-text-field.mdc-text-field--outlined,
 input {
   cursor: url("assets/rick_cursor-3.png"), auto;
 }

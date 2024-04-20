@@ -20,7 +20,7 @@
   </div>
 
   @if (results) {
-  <div style="display: flex; justify-content: center; align-items: center">
+  <div class="div_pagination">
     <mat-paginator
       style="border-radius: 10px"
       [length]="results.info.count"
@@ -28,8 +28,7 @@
       hidePageSize="true"
       aria-label="Select page"
       (page)="handlePageEvent($event)"
-    >
-    </mat-paginator>
+    />
   </div>
 
   <div class="content">
